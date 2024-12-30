@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[shortlabels]{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{graphicx}
+\begin{document}
+\author{Moisés Amundarain}
+\date{31-05-2024}
+\title{Certamen 2}
+\maketitle
+\begin{figure}
+	\begin{center}		\includegraphics[width=5cm]{logoudec.png}
+	\caption{Logo Udec}
+	\end{center}
+  \label{logoudec}
+\end{figure}
+\newpage
+\section{Presentación}
+Mi nombre es Moisés Amundarain, de la carrera de Cs. Físicas, de nacimiento venga de Venezuela, sin embargo, ya llevo 10 años en Chile. Algún dato extra, soy bombero desde hace más de un año.
+\section{Mi carrera}
+Desde hace mucho tiempo, antes de entrar a la universidad, estuve preguntandome qué queria estudiar, hasta que, cuando estaba en III° medio, descubrucrí que mi gusto era la física y la astronomía, y no me imaginaba haciendo algo más que no estuviera relacionado con mis gustos.
+\subsection{Cursos de primer año}
+\begin{center}
+	\begin{tabular}{c|c|c}
+		Semestre & Curso & Dpartamento \\ \hline
+		1 & Computación Científica & de Física. \\ 
+		1 & Álgebra y Trigonometría & de Matemática \\
+		1 & Física I: Visión panoramica & de Física \\ 
+		2 & Álgebra lineal & de Matemática \\
+		2 & Cálculo Diferencial e Integral & de Matemática \\ 
+		2 & Física II & de Física
+	\end{tabular}
+\end{center}
+\section{Libros recomendados}
+	\begin{itemize}
+		\item El primer libro que recomiendo se llama ``Inteligencia mátematica" de Eduardo Sáenz de Cabezón \cite{libro1}
+		\item Otro libro que recomiendo es ``Ciencia Pop"  de GAbriel León \cite{libro2}
+	\end{itemize}
+\newpage
+\section{Expresiones matemáticas/físicas favoritas}
+	\begin{enumerate}
+		\item La primera expresión matemática que me gusta, es el Teorema del Binomio, ya que, cuando lo vimos en álgebra y trigonometría, me pareció asombroso que, cualquier bonomio, elavado a cualquier número \emph{n} se pueda resolver con una sola fórmula. La expresión matemática en cuestión es:
+		\begin{align*}
+			(a+b)^{n} = \sum^{n}_{k=0} \begin{pmatrix}
+		a \\ k \end{pmatrix} a^{n-k} \times b^{k}
+		\end{align*}
+		\item Otra expresión matemática, que puede parecer muy simple, pero cuando se demostró en álgebra y trigonometría, cambió la forma de ver como funcionaban las coasas y puede ver que, casi todo, se puede demostrar, la expresión es: 
+		\begin{equation*}
+		m_{1} \times m_{2} = -1
+		\end{equation*}
+		Es decir, para que dos rectas sea perpendiculares, la multiplicación de sus pendientes debe ser $=-1$.
+		\item Por útimo, la formúla de Schrödinger, una de las más bonitas que me ha tocado escribir. 
+		\begin{align*}
+		-\frac{\hbar^2}{2m}\nabla^2\Psi+V(\vec{x}) \Psi=i\hbar\frac{\partial\Psi}{\partial t}.
+		\end{align*}
+	\end{enumerate}
+\begin{thebibliography}{99}
+	\bibitem{libro1} Eduardo Sáenz de Cabezón. \emph{Inteligencia matemática}. 2016.
+	\bibitem{libro2} Gabriel León. \emph{La Ciencia Pop}. 2017.
+\end{thebibliography}
+\end{document}

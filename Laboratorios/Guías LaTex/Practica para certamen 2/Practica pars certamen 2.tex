@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath} 
+\usepackage{amsthm}  
+\usepackage{amssymb}
+\usepackage[shortlabels]{enumitem}
+\begin{document}
+\author{Moisés Amundarain}
+\title{Ejercicio de Euler}
+\date{23-05-2024}
+\maketitle
+Dada la función: 
+\begin{equation*}
+f(x)= e^{\sqrt{9-x^{2}}}
+\end{equation*}
+
+definir: 
+\begin{enumerate}[a),leftmargin=2cm]	
+\item Determinar si la función posee inversa. Justificando.
+\item Definir las condiciones para que la función poseea inversa.
+\end{enumerate}
+\textbf{Solución:} 
+\begin{enumerate}
+	\item Lo primero, es calcular el Dom \emph{f}.
+		\begin{align*}
+			\text{Dom } f & = \{ x \in \mathbb{R}
+ : 9-x^{2} \geq 0 \} \\ 
+			& = \{ x \in \mathbb{R}
+ : -3 \leq x \leq 3 \} \\ 
+			& \iff [-3,3]	
+			\end{align*}
+	\item Lo segundo, es comprobrar la inyectividad. 
+	
+	Para esto, se muestra que $f(x)$, no es inyectiva, ya que para $f(-3) \land f(3)$, se llega a que: $f(-3)=1 \land f(3)=1 \land -3 \ne 3$. 
+	\item Dado que que $f(x)$ no inyectiva, se procede a ``reparar la inyectividad".
+	
+	Dado $f(x) = e^{\sqrt{9-x^2}}$, mostrar que $f(a)=f(b)$
+\newpage
+	Entonces: 
+		\begin{align*}
+			e^{\sqrt{9-a^2}} &= e^{\sqrt{9-b^2}} & \mbox{/se aplica log. natural para sacar el número de euler}\\
+			\sqrt{9-a^{2}} &= \sqrt{9-b^{2}} \\
+			9-a^{2} &= 9-b^{2} \\
+			a^2 &= b^2 \\
+			|a| &= |b|\\		
+		\end{align*}
+\end{enumerate}
+\end{document}

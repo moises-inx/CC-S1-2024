@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\begin{document}
+\author{Moisés Amundarain}
+\title{Guías}
+\date{13-05-2024}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{Guía 04}
+\subsection{entorno quote}
+\begin{quote}
+``El primer principio es que no te debes engañar a ti mismo y tú eres la persona que más fácilmente te engaña. Así que hay que tener mucho cuidado con eso. Una vez que no te engañas a ti mismo, es fácil que no engañes a los otros científicos" \texttt{Richard Feynman} \cite{cita1}
+\end{quote}
+\subsection{entorno flushletf}
+\begin{flushleft}
+``El primer principio es que no te debes engañar a ti mismo y tú eres la persona que más fácilmente te engaña. Así que hay que tener mucho cuidado con eso. Una vez que no te engañas a ti mismo, es fácil que no engañes a los otros científicos" \texttt{Richard Feynman} \cite{cita2}
+\end{flushleft}
+\subsection{listas}
+Esta es una lista
+\begin{itemize}
+	\item uno 
+	\item dos
+	\item 3
+\end{itemize}
+Esta es otra lista
+\begin{enumerate}
+	\item 1
+	\item 2
+	\item tres
+\end{enumerate}
+\newpage
+\section{Guía 05}
+\subsection{ecuación de Schrödinger}
+\begin{equation*}
+		- \frac{\hbar^2}{2m} \nabla^2 \Psi + V(\vec{x})\Psi = i\hbar \frac{\partial \Psi}{\partial t}
+\end{equation*}
+\subsection{más ecuaciones}
+\begin{equation*}
+	\int \sin^2(x) dx = \frac{x-\sin(x) \cos (x)}{2}	
+\end{equation*}
+\begin{equation*}
+	v=c \sqrt{1- \frac{m^2c^4}{(mc^2+K)²}}
+\end{equation*}
+\begin{equation*}
+	\vec{F}=\frac{\rm{d} \vec{p}}{\rm{d}t}= \frac{\rm{d}(\gamma \vec{v})}{\rm{d}t} = m\gamma³\vec{a}=\frac{m\vec{a}}{[1-(v²/c²)]^{3/2}}
+\end{equation*}
+\subsection{ecuaciones de mecánica}
+\begin{equation}
+	\Delta \vec{r} = \Delta r_x \hat{x} + \Delta r_y \hat{y}+ 	\Delta r_z \hat{z}
+\end{equation}
+\begin{equation}
+	\langle \vec{v} \rangle \frac{\Delta \vec{r}}{\Delta t}
+\end{equation}
+\begin{thebibliography}{99}
+\bibitem{cita1} Guía 04 - CC cita de {\em Richard Feynman}
+\bibitem{cita2} Guía 04 - CC cita de {\em Richard Feynman}
+\end{thebibliography}
+\end{document}
